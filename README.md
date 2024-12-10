@@ -1,2 +1,2 @@
-# leoweb
-this website for academic  
+# Leonard Website
+this website is personal 
