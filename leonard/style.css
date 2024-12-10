@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background */
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #004080; /* Dark Blue */
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.selected {
+    background-color: #006bb3; /* Light blue on hover */
+    border-radius: 5px;
+}
+
+/* Main Content Styling */
+section {
+    margin-top: 80px; /* Adjusting for the fixed header */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #004080; /* Dark blue color for headings */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #004080;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e0e0e0;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #004080;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Contact and About Section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer marquee {
+    font-size: 18px;
+}
+
+footer b {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
